@@ -5,7 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.airstay.domain.Customer;
+import com.airstay.mapper.CustomerMapper;
 import com.airstay.repository.CustomerRepository;
+import com.airstay.rest.controller.dto.CustomerDto;
 import com.airstay.service.CustomerService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +23,7 @@ public class CustomerServiceImpl implements CustomerService {
 	private CustomerRepository customerRepository;
 	
 	@Override
-	public Customer create(String firstName, String lastName, String mobilePhone) {
+	public CustomerDto create(String firstName, String lastName, String mobilePhone) {
 		
 		log.info("Request to create customer data");
 		
@@ -35,17 +37,19 @@ public class CustomerServiceImpl implements CustomerService {
 		customerRepository.save(customer);
 		
 		log.info("Customer data created {} ", customer);
-		return customer;
+		return CustomerMapper.INSTANCE.entityToDto(customer);
 	}
 
 	@Override
-	public Customer getByMobilePhone(String mobilePhone) {
-		return customerRepository.findByMobilePhone(mobilePhone);
+	public CustomerDto getByMobilePhone(String mobilePhone) {
+		Customer customer = customerRepository.findByMobilePhone(mobilePhone);
+		return CustomerMapper.INSTANCE.entityToDto(customer);
 	}
 
 	@Override
-	public List<Customer> getAll() {
-		return customerRepository.findAll();
+	public List<CustomerDto> getAll() {
+		List<Customer> customers =  customerRepository.findAll();
+		return CustomerMapper.INSTANCE.entitiesToDtos(customers);
 	}
 
 }

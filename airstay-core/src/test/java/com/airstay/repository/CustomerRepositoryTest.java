@@ -11,6 +11,10 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.airstay.domain.Customer;
 
+/**
+ * @author sarwo.wibowo
+ *
+ */
 @DataMongoTest
 @ExtendWith(SpringExtension.class)
 public class CustomerRepositoryTest {

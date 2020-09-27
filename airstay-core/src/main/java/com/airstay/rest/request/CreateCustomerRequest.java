@@ -1,8 +1,12 @@
-package com.airstay.controller.request;
+package com.airstay.rest.request;
 
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * @author sarwo.wibowo
+ *
+ */
 @Getter
 @Setter
 public class CreateCustomerRequest {
