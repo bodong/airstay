@@ -12,6 +12,8 @@ Rest API for Hotel booking
 Once the application run in your local, you should be able to see what are APIs available. 
 ``Go to : http://localhost:8080/swagger-ui.html``
 
+Main end point is ``/api/v1/bookings ``, while others are for supporting / reference in order to know what data need to put in the request body. 
+
 Sample request is available under airstay/postman/hotelexplorer.postman_collection.json
 
 

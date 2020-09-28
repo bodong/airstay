@@ -1,9 +1,6 @@
 package com.airstay.hotel.service;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -12,27 +9,22 @@ import static org.mockito.Mockito.when;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.airstay.customer.rest.dto.CustomerDto;
 import com.airstay.customer.service.CustomerService;
 import com.airstay.hotel.domain.Booking;
-import com.airstay.hotel.domain.Room;
 import com.airstay.hotel.repository.BookingRepository;
-import com.airstay.hotel.repository.RoomRepository;
 import com.airstay.hotel.rest.dto.BookingDto;
 import com.airstay.hotel.rest.dto.HotelDto;
 import com.airstay.hotel.rest.dto.RoomDto;
 import com.airstay.hotel.rest.request.MakeBookingRequest;
 import com.airstay.hotel.service.impl.BookingServiceImpl;
-import com.airstay.hotel.service.impl.RoomServiceImpl;
 
 /**
  * @author sarwo.wibowo
