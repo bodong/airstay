@@ -46,7 +46,6 @@
 		<!-- TODO : to add future modules here if there is any -->
 	</modules>
 
-
 	<build>
 		<plugins>
 			<plugin>
@@ -59,5 +58,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>

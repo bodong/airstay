@@ -5,8 +5,9 @@ Rest API for Hotel booking
 1. Install mongodb on your machine, google it how to do
 2. Checkout the code
 3. Go to airstay (root directory) and perform ``mvn clean install``. It will execute all test classes as well. If you want to skip it, just run as : ``mvn clean install -D skipTests=true``
-4. Run spring boot via command line : ``mvn spring:boot run -Ddata=true``. VM argument ``-Ddata=true`` is required to setup pre-populated data in the development environment.
+4. Run spring boot via command line : Go to airstay-core directory and execute ``mvn org.springframework.boot:spring-boot-maven-plugin:run -Ddata=true``. VM argument ``-Ddata=true`` is required to setup pre-populated data in the development environment.
 5. Run spring boot via intellij/eclipse : run the HotelExplorerApplication.java with vm argument ``-Ddata=true``
+
 
 ## How to read the rest api documentation
 Once the application run in your local, you should be able to see what are APIs available. 
