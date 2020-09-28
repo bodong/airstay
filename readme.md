@@ -9,7 +9,11 @@ Rest API for Hotel booking
 5. Run spring boot via intellij/eclipse : run the HotelExplorerApplication.java with vm argument ``-Ddata=true``
 
 ## How to read the rest api documentation
-Once the application run in your local, you should be able to see what are APIs available. Go to : http://localhost:8080/swagger-ui.html
+Once the application run in your local, you should be able to see what are APIs available. 
+``Go to : http://localhost:8080/swagger-ui.html``
+
+Sample request is available under airstay/postman/hotelexplorer.postman_collection.json
+
 
 
 ## Assumption on this app ##
