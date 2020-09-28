@@ -14,16 +14,17 @@ import com.airstay.tool.PreloadDataService;
  */
 @SpringBootApplication
 public class HotelExplorerApplication {
-	
-	@Autowired
+
+	@Autowired(required = false)
 	private PreloadDataService preloadDataService;
-	
+
 	@PostConstruct
 	void init() {
-		preloadDataService.createData();
+		if(preloadDataService != null) {
+			preloadDataService.createData();
+		}
 	}
-	
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(HotelExplorerApplication.class, args);
 	}
