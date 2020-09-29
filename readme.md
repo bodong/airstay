@@ -25,10 +25,15 @@ Sample request is available under airstay/postman/hotelexplorer.postman_collecti
 2. No split module at the moment with limited time, but this app can be scaled, just need to create another sub-module for new functionalities that required to have dedicated module.
 3. There is no spring security implemented. 
 4. There is no encryption for database connection implemented. 
+5. Only simple validation implemented, no detail validation implemented, such as  : validate address (i.e. address doctor), valid mobile number (check if mobile number is active)
+6. No audit trail implemented. 
+
 
 ### Functionally ###
 1. No login user implemented. But user data is populated. If given user to make booking is not valid, it will be denied the request. 
 2. Data provided is just mock data.
 3. In this system, the assumption is user make booking per hotel per room, currently is not supported for multiple hotel and multiple room in one booking. 
+4. Currently only support for Malaysia, so currency assumptions is MYR.
+5. The scope is just booking, so is not handling the check-out / payment.
  
 
