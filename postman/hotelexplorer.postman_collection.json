@@ -129,7 +129,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"firstName\": \"Sarwo\",\n    \"lastName\" : \"Wibowo\", \n    \"mobilePhone\" : \"0146268039\",\n    \"email\" : \"sarwo04@gmail.com\"\n\n}",
+					"raw": "{\n    \"firstName\": \"Sarwo\",\n    \"lastName\" : \"Wibowo\", \n    \"mobilePhone\" : \"09232321232\",\n    \"email\" : \"sarwo@wibowo.com\"\n\n}",
 					"options": {
 						"raw": {
 							"language": "json"
